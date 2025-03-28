@@ -59,7 +59,7 @@ export default function Login() {
                 />
               </div>
 
-              <a href="">
+              <a href="components/pages/home">
                 <button
                     type="submit"
                     className="bg-yellow-300 text-white w-full py-2 rounded hover:bg-yellow-400 transition-colors cursor-pointer"

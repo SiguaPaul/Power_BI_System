@@ -1,0 +1,32 @@
+<div>
+    <nav>
+        <div class="container-content-nav">
+            <div class="icon-nav">
+                <img src="assets/icon-logo.Bi0O_rGO_Z1iLfJp.svg" alt="">
+                <h2>StarFlowers</h2>
+            </div>
+        </div>
+        <div class="container-ruts-nav">
+            <ul>
+                <li *ngFor="let p of pages">
+                    <a [routerLink]="p.path" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+                      {{ p.title }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container-content-header">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 pt-20 w-130">
+                Centro de Control de Power BI para los usuarios dentro de la empresa
+              </h2>
+              <p className="text-gray-600 mb-6 leading-relaxed w-130">
+                Nuestro sistema tiene el objetivo de controlar la información que se maneja 
+                en la plataforma Power BI. Etiam porta sem malesuada magna mollis euismod. 
+                Curabitur blandit tempus porttitor.
+            </p>
+        </div>
+    </header>
+</div>
