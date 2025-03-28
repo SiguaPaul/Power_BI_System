@@ -1,27 +1,25 @@
-import Link from "next/link"
+// NavLinks.js
+import Link from "next/link";
 
 const links = [
-    {
-        name: 'Home', href: '/components/pages/home'
-    },
-    {
-        name: 'Sales', href: '/components/pages/sales'
-    }
+  { name: 'Power BI', href: '/components/pages/work-space/power-bi' },
+  { name: 'Unosoft', href: '/components/pages/unosoft' },
+  { name: 'Fresh Portal', href: '/components/pages/freshportal' },
 ];
 
 export default function NavLinks() {
-    return (
-        <>
-            {links.map((link) => (
-                <Link
-                    key={link.name}
-                    href={link.href}
-                    className="flex h-[48px] items-center gap-2 rounded-md bg-gray-700 p-3 text-sm font-medium text-white 
-                               hover:bg-blue-500 hover:text-white transition-all duration-200 ease-in-out md:justify-start md:px-4"
-                >
-                    {link.name}
-                </Link>
-            ))}
-        </>
-    );
+  return (
+    <ul className="space-y-2">
+      {links.map((link) => (
+        <li key={link.name}>
+          <Link
+            href={link.href}
+            className="block text-gray-700 hover:text-blue-600 transition-colors"
+          >
+            {link.name}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
 }
